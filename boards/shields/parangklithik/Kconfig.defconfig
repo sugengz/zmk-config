@@ -1,0 +1,6 @@
+if SHIELD_PARANGKLITHIK
+
+config ZMK_KEYBOARD_NAME
+    default "parangklithik"
+
+endif # SHIELD_PARANGKLITHIK
