@@ -4,11 +4,16 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: parangklithik
+      url-base: https://github.com/sugengz
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
       remote: zmkfirmware
+      import: app/west.yml
+    - name: parangklithik
+      remote: parangklithik
       import: app/west.yml
   self:
     path: config
