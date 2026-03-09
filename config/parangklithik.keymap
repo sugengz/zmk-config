@@ -8,14 +8,26 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L &kp M &kp N &kp O &kp P
-                &kp Q &kp R &kp S &kp T &kp U &kp V &kp W &kp X &kp Y &kp Z &kp A &kp B &kp C &kp D &kp E &kp F
-                &kp G &kp H &kp I &kp J &kp K &kp L &kp M &kp N &kp O &kp P &kp Q &kp R &kp S &kp T &kp U &kp V
-                &kp W &kp X &kp Y &kp Z &kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L
-                &kp M &kp N &kp O &kp P &kp Q &kp R &kp S &kp T &kp U &kp V &kp W &kp X &kp Y &kp Z
-                &kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L &kp M &kp N
+&kp A  &kp B  &kp C  &kp D  &kp E  &kp F  &kp G  &kp H  &kp I  &kp J  &kp K  &kp L  &kp M  &kp N  &kp O  &kp P
+&kp Q  &kp R  &kp S  &kp T  &kp U  &kp V  &kp W  &kp X  &kp Y  &kp Z  &kp A  &kp B  &kp C  &kp D  &kp E  &kp F
+&kp G  &kp H  &kp I  &kp J  &kp K  &kp L  &kp M  &kp N  &kp O  &kp P  &kp Q  &kp R  &kp S  &kp T  &kp U  &kp V
+&kp W  &kp X  &kp Y  &kp Z  &kp A  &kp B  &kp C  &kp D  &kp E  &kp F  &kp G  &kp H  &kp I  &kp J  &kp K  &kp L
+&kp M  &kp N  &kp O  &kp P  &kp Q  &kp R                &kp S  &kp T  &kp U  &kp V  &kp W  &kp X  &kp Y  &kp Z
+&kp A  &kp B  &kp C  &kp D  &kp E  &kp F  &kp G  &kp H  &kp I  &kp J  &kp K  &kp L  &kp M  &kp N
             >;
+
             sensor-bindings = <&inc_dec_kp A B &inc_dec_kp C D>;
+        };
+
+        layer_1 {
+            bindings = <
+&kp F1     &kp F2    &kp F3    &kp F4     &kp F5  &kp F6  &kp MINUS  &kp GRAVE  &kp EQUAL  &kp F7     &kp F8  &kp F9     &kp F10  &kp F11   &kp F12    &trans
+&kp ESC    &kp N1    &kp N2    &kp N3     &kp N4  &kp N5  &kp LBKT   &kp BSLH   &kp RBKT   &kp N6     &kp N7  &kp N8     &kp N9   &kp N0    &kp BSPC   &kp DEL
+&kp TAB    &kp Q     &kp W     &kp F      &kp P   &kp G   &kp HOME   &kp DEL    &kp PG_UP  &kp J      &kp L   &kp U      &kp Y    &kp SEMI  &kp SQT    &kp BSLH
+&kp CAPS   &kp A     &kp R     &kp S      &kp T   &kp D   &kp END    &trans     &kp PG_DN  &kp H      &kp N   &kp E      &kp I    &kp O     &kp ENTER  &trans
+&kp LSHFT  &kp Z     &kp X     &kp C      &kp V   &kp B                         &kp UP     &kp K      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT  &trans
+&kp LCTRL  &kp LALT  &kp LGUI  &kp SPACE  &trans  &trans  &kp LEFT   &kp DOWN   &kp RIGHT  &kp SPACE  &trans  &trans     &trans   &trans
+            >;
         };
     };
 };
