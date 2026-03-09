@@ -1,2 +1,6 @@
-config SHIELD_PARANGKLITHIK
-    def_bool $(shields_list_contains,parangklithik)
+config SHIELD_PARANGKLITHIK_LEFT
+    def_bool $(shields_list_contains,parangklithik_left)
+  
+config SHIELD_PARANGKLITHIK_RIGHT
+    def_bool $(shields_list_contains,parangklithik_right)
+  

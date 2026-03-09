@@ -1,6 +1,39 @@
-if SHIELD_PARANGKLITHIK
+if SHIELD_PARANGKLITHIK_LEFT
 
+# Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
     default "parangklithik"
 
-endif # SHIELD_PARANGKLITHIK
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+  default 1
+
+config BT_MAX_CONN
+  default 6
+
+config BT_MAX_PAIRED
+  default 6
+
+endif
+
+if SHIELD_PARANGKLITHIK_LEFT || SHIELD_PARANGKLITHIK_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
+
+# ---------------------
+# Kconfig for shield "parangklithik_left" with board "nice_nano_v2"
+# ---------------------
+if BOARD_NICE_NANO_V2 && SHIELD_PARANGKLITHIK_LEFT
+
+config SPI
+    default y
+
+config WS2812_STRIP
+    default y
+
+endif
